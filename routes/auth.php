@@ -19,6 +19,7 @@ Route::middleware('guest')->group(function () {
 
     Route::post('register', [RegisteredUserController::class, 'store']);
 
+    Route::get('/', [SocialiteController::class,'index'])->name('login.user');  
 
     Route::get('login', [AuthenticatedSessionController::class, 'create'])
                 ->name('login');

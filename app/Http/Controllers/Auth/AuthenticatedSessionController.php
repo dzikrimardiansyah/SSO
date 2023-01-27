@@ -40,7 +40,7 @@ class AuthenticatedSessionController extends Controller
     {
         Auth::guard()->logout();
              $request->session()->flush();
-             $azureLogoutUrl = Socialite::driver('azure')->getLogoutUrl(route('login.auth'));
+             $azureLogoutUrl = Socialite::driver('azure')->getLogoutUrl(route('login.user'));
              return redirect($azureLogoutUrl);
     }
 }

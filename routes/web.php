@@ -16,7 +16,6 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/',[SocialiteController::class,'index'])->name('login.auth');
 
 Route::get('sign-in-azure',[SocialiteController::class,'azure'])->name('user.login.azure');
 Route::get('/auth/azure/callback',[SocialiteController::class,'handleProvideCallback'])->name('user.azure.callback');

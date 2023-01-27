@@ -48,7 +48,7 @@ class SocialiteController extends Controller
              Mail::to($user->email)->send(new AfterRegister($user));
          }
          Auth::login($user, true);
-         return redirect (route('index'));
+         return redirect (route('login.user'));
     }
 
     // public function logout(Request $request) 
