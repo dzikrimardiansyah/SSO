@@ -11,7 +11,7 @@
 
     <link rel="stylesheet" href="{{ asset('css/index.css') }}">
 
-    <title>Tuku Mangan</title>
+    <title>Komisi Yudisial</title>
 </head>
 
 <body>
@@ -301,15 +301,29 @@
                         </div>
                     </div>
 
-
+                    @auth
                     <div class="d-flex justify-content-start align-items-center">
-                        <button class="nav-btn">
-                            <img src="./assets/img/global/navbar/bell.svg" alt="">
-                        </button>
-                        <button class="nav-btn cart" onclick="toggleRightSidebar()">
-                            <img src="./assets/img/global/navbar/shopping-cart.svg" alt="">
-                        </button>
+                        <a href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                            Halo, {{Auth::user()->name}}!
+                            @if (Auth::user()->avatar)
+                            <img src="{{Auth::user()->avatar}}" class="user-photo" alt="">  
+                            @else
+                            <img src="https://ui-avatars.com/api/?name=Admin" class="user-photo" alt="" style="border-radius: 50%">
+                            @endif
+                          
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink" style="right: 0; left: auto">
+                                <li>
+                                    <a href="#" class="dropdown-item" onclick="event.preventDefault(); document.getElementById('logout-form').submit()">Sign Out</a>
+                                    <form id="logout-form" action="{{route('logout')}}" method="get" style="display: none">
+                                    <input type="hidden" name="_token" value="{{ csrf_token() }}">
+                                    </form>
+                                </li>
+                           </ul>
+                        </a>
+                       
                     </div>
+                    @endauth
+                   
                 </div>
 
                 <div class="d-flex d-sm-none flex-column justify-content-start align-items-start mt-4">
