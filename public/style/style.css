@@ -1,0 +1,42 @@
+ body{
+    background-color: #C0C0C0;
+ }
+
+ h1,h2,h3,h4,h5,h6 {
+    font-family: 'Assistant', sans-serif;
+ }
+
+ p{
+    font-family: 'Assistant', sans-serif;
+ }
+
+.login h2{
+    font-weight: 700;
+}
+
+.login h4 {
+    font-weight: 500;
+    margin-top:-10px;
+    bottom: 0;
+}
+
+.login p {
+    font-weight: 600;
+    margin-top: 30px;
+    -webkit-text-decoration-line:underline;
+    text-decoration-line:underline;
+}
+
+ footer {
+    background-color:#F5FFFA;
+    margin-top: 50px
+ }
+
+ footer p {
+    font-family: 'Assistant', sans-serif;
+    font-weight: 500;
+ }
+
+ 
+
+
