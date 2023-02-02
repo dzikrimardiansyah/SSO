@@ -403,8 +403,8 @@ body {
   border-radius: 50%;
 }
 .food-img img {
-  width: 110px;
-  height: 110px;
+  width: 60%;
+  height: 60%;
 }
 .food-name {
   font-weight: 500;

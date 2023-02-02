@@ -17,164 +17,6 @@
 <body>
 
     <div class="screen-cover d-none"></div>
-
-    <div class="nav col-right-sidebar">
-        <aside class="cart-sidebar">
-            <div class="d-flex justify-content-between align-items-center mb-5">
-                <div class="d-flex flex-column justify-content-start align-items-start">
-                    <h2 class="nav-title">My Carts</h2>
-                    <h5 class="nav-desc">Pay now and just sit tight</h5>
-                </div>
-
-                <button class="nav-btn" onclick="toggleRightSidebar()">
-                        <img src="./assets/img/global/cart/fi_x-1.svg" alt="">
-                    </button>
-            </div>
-
-            <div class="w-100 food-card d-flex justify-content-between align-items-center">
-                <div class="w-100 d-flex justify-content-start align-items-center">
-                    <div class="food-img">
-                        <img src="./assets/img/global/food/photo-3.png" alt="">
-                    </div>
-
-                    <div class="d-flex flex-column justify-content-start align-items-start">
-                        <h3 class="food-name">Burger King</h3>
-                        <h5 class="food-price">$19,500</h5>
-                    </div>
-                </div>
-
-                <div class="d-flex justify-content-start align-items-center">
-                    <button class="btn-number decrease" onclick="decreaseNumber(this)">
-                            <img src="./assets/img/global/cart/minus.svg" alt="">
-                        </button>
-                    <input class="input-number" type="text" value="12" disabled>
-                    <button class="btn-number" onclick="increaseNumber(this)">
-                            <img src="./assets/img/global/cart/fi_x.svg" alt="">
-                        </button>
-                </div>
-            </div>
-
-            <div class="w-100 food-card d-flex justify-content-between align-items-center">
-                <div class="w-100 d-flex justify-content-start align-items-center">
-                    <div class="food-img">
-                        <img src="./assets/img/global/food/photo-4.png" alt="">
-                    </div>
-
-                    <div class="d-flex flex-column justify-content-start align-items-start">
-                        <h3 class="food-name">Latte Sumatra</h3>
-                        <h5 class="food-price">$800</h5>
-                    </div>
-                </div>
-
-                <div class="d-flex justify-content-start align-items-center">
-                    <button class="btn-number decrease" onclick="decreaseNumber(this)">
-                            <img src="./assets/img/global/cart/minus.svg" alt="">
-                        </button>
-                    <input class="input-number" type="text" value="3" disabled>
-                    <button class="btn-number" onclick="increaseNumber(this)">
-                            <img src="./assets/img/global/cart/fi_x.svg" alt="">
-                        </button>
-                </div>
-            </div>
-
-            <div class="w-100 food-card d-flex justify-content-between align-items-center">
-                <div class="w-100 d-flex justify-content-start align-items-center">
-                    <div class="food-img">
-                        <img src="./assets/img/global/food/photo-2.png" alt="">
-                    </div>
-
-                    <div class="d-flex flex-column justify-content-start align-items-start">
-                        <h3 class="food-name">Cake</h3>
-                        <h5 class="food-price">$52,000</h5>
-                    </div>
-                </div>
-
-                <div class="d-flex justify-content-start align-items-center">
-                    <button class="btn-number decrease" onclick="decreaseNumber(this)">
-                            <img src="./assets/img/global/cart/minus.svg" alt="">
-                        </button>
-                    <input class="input-number" type="text" value="55" disabled>
-                    <button class="btn-number" onclick="increaseNumber(this)">
-                            <img src="./assets/img/global/cart/fi_x.svg" alt="">
-                        </button>
-                </div>
-            </div>
-
-            <div class="w-100 food-card d-flex justify-content-between align-items-center">
-                <div class="w-100 d-flex justify-content-start align-items-center">
-                    <div class="food-img">
-                        <img src="./assets/img/global/food/photo-5.png" alt="">
-                    </div>
-
-                    <div class="d-flex flex-column justify-content-start align-items-start">
-                        <h3 class="food-name">Lite Fruits</h3>
-                        <h5 class="food-price">$22,000</h5>
-                    </div>
-                </div>
-
-                <div class="d-flex justify-content-start align-items-center">
-                    <button class="btn-number decrease" onclick="decreaseNumber(this)">
-                            <img src="./assets/img/global/cart/minus.svg" alt="">
-                        </button>
-                    <input class="input-number" type="text" value="85" disabled>
-                    <button class="btn-number" onclick="increaseNumber(this)">
-                            <img src="./assets/img/global/cart/fi_x.svg" alt="">
-                        </button>
-                </div>
-            </div>
-
-            <div class="w-100 food-card d-flex justify-content-between align-items-center">
-                <div class="w-100 d-flex justify-content-start align-items-center">
-                    <div class="food-img">
-                        <img src="./assets/img/global/food/photo-3.png" alt="">
-                    </div>
-
-                    <div class="d-flex flex-column justify-content-start align-items-start">
-                        <h3 class="food-name">Burger King</h3>
-                        <h5 class="food-price">$99</h5>
-                    </div>
-                </div>
-
-                <div class="d-flex justify-content-start align-items-center">
-                    <button class="btn-number decrease" onclick="decreaseNumber(this)">
-                            <img src="./assets/img/global/cart/minus.svg" alt="">
-                        </button>
-                    <input class="input-number" type="text" value="21" disabled>
-                    <button class="btn-number" onclick="increaseNumber(this)">
-                            <img src="./assets/img/global/cart/fi_x.svg" alt="">
-                        </button>
-                </div>
-            </div>
-
-            <div class="mt-5 w-100 d-flex justify-content-between align-items-center cart-details">
-                <h4 class="cart-label">Sub Total</h4>
-                <h4 class="cart-value">$290,000</h4>
-            </div>
-
-            <div class="w-100 d-flex justify-content-between align-items-center cart-details">
-                <h4 class="cart-label">Discount</h4>
-                <h4 class="cart-value">BlackFriday</h4>
-            </div>
-
-            <div class="w-100 d-flex justify-content-between align-items-center cart-details">
-                <h4 class="cart-label">VAT 25%</h4>
-                <h4 class="cart-value">$3,000</h4>
-            </div>
-
-            <div class="w-100 d-flex justify-content-between align-items-center cart-details">
-                <h4 class="cart-label">Total</h4>
-                <h4 class="cart-value fw-bold">$455,000</h4>
-            </div>
-
-            <button class="w-100 food-btn">Pay with MyWallet</button>
-
-            <div class="d-flex justify-content-center align-items-center">
-                <a href="#" class="food-link">Read Terms & Conditions</a>
-            </div>
-
-        </aside>
-    </div>
-
     <div class="row position-relative">
 
 
@@ -220,8 +62,8 @@
                         </button>
 
                         <div class="d-none d-sm-flex flex-column justify-content-start align-items-start">
-                            <h2 class="nav-title">Order Foods</h2>
-                            <h5 class="nav-desc">Your happiness starts here</h5>
+                            <h2 class="nav-title">Komisi Yudisial</h2>
+                            <h5 class="nav-desc">Republik Indonesia</h5>
                         </div>
                     </div>
 
@@ -260,12 +102,7 @@
             <div class="content">
                 <ul class="nav nav-tabs d-flex justify-content-start align-items-start" id="myTab" role="tablist">
                     <li class="nav-item" role="presentation">
-                        <button class="nav-link active" id="new-tab" data-bs-toggle="tab" data-bs-target="#new-tab-pane" type="button" role="tab" aria-controls="new-tab-pane" aria-selected="true">New
-                            Order</button>
-                    </li>
-                    <li class="nav-item" role="presentation">
-                        <button class="nav-link" id="my-tab" data-bs-toggle="tab" data-bs-target="#my-tab-pane" type="button" role="tab" aria-controls="my-tab-pane" aria-selected="false">My
-                            Orders</button>
+                        <button class="nav-link active" id="new-tab" data-bs-toggle="tab" data-bs-target="#new-tab-pane" type="button" role="tab" aria-controls="new-tab-pane" aria-selected="true">Apps</button>
                     </li>
                 </ul>
                 <div class="tab-content" id="myTabContent">
@@ -275,78 +112,24 @@
                             <div class="col-6 col-md-4 col-lg-3">
                                 <div class="food-card d-flex justify-content-center align-items-center flex-column">
                                     <div class="food-img">
-                                        <img src="./assets/img/global/food/photo.png" alt="">
+                                        <img src="{{ asset('images/icon.png') }}" alt="">
                                     </div>
 
-                                    <h3 class="food-name">Vegan Mix</h3>
-                                    <h5 class="food-price">$18,000</h5>
+                                    <h3 class="food-name">Eklinik</h3>
 
-                                    <button class="food-btn">Add to Cart</button>
+                                    <a href="https://eklinik.komisiyudisial.go.id" class="btn food-btn">Go to apps</a>
                                 </div>
                             </div>
 
                             <div class="col-6 col-md-4 col-lg-3">
                                 <div class="food-card d-flex justify-content-center align-items-center flex-column">
                                     <div class="food-img">
-                                        <img src="./assets/img/global/food/photo-2.png" alt="">
+                                        <img src="{{ asset('images/icon.png') }}" alt="">
                                     </div>
 
-                                    <h3 class="food-name">Cake</h3>
-                                    <h5 class="food-price">$520</h5>
+                                    <h3 class="food-name">JDIH</h3>
 
-                                    <button class="food-btn">Add to Cart</button>
-                                </div>
-                            </div>
-
-                            <div class="col-6 col-md-4 col-lg-3">
-                                <div class="food-card d-flex justify-content-center align-items-center flex-column">
-                                    <div class="food-img">
-                                        <img src="./assets/img/global/food/photo-4.png" alt="">
-                                    </div>
-
-                                    <h3 class="food-name">Latte Sumatra</h3>
-                                    <h5 class="food-price">$220,000</h5>
-
-                                    <button class="food-btn">Add to Cart</button>
-                                </div>
-                            </div>
-
-                            <div class="col-6 col-md-4 col-lg-3">
-                                <div class="food-card d-flex justify-content-center align-items-center flex-column">
-                                    <div class="food-img">
-                                        <img src="./assets/img/global/food/photo-5.png" alt="">
-                                    </div>
-
-                                    <h3 class="food-name">Lite Fruits</h3>
-                                    <h5 class="food-price">$55,000</h5>
-
-                                    <button class="food-btn">Add to Cart</button>
-                                </div>
-                            </div>
-
-                            <div class="col-6 col-md-4 col-lg-3">
-                                <div class="food-card d-flex justify-content-center align-items-center flex-column">
-                                    <div class="food-img">
-                                        <img src="./assets/img/global/food/photo-1.png" alt="">
-                                    </div>
-
-                                    <h3 class="food-name">Ayam Soup</h3>
-                                    <h5 class="food-price">$23,000</h5>
-
-                                    <button class="food-btn">Add to Cart</button>
-                                </div>
-                            </div>
-
-                            <div class="col-6 col-md-4 col-lg-3">
-                                <div class="food-card d-flex justify-content-center align-items-center flex-column">
-                                    <div class="food-img">
-                                        <img src="./assets/img/global/food/photo-3.png" alt="">
-                                    </div>
-
-                                    <h3 class="food-name">Burger King</h3>
-                                    <h5 class="food-price">$19,500</h5>
-
-                                    <button class="food-btn">Add to Cart</button>
+                                    <a href="https://jdih.komisiyudisial.go.id" class="btn food-btn">Go to apps</a>
                                 </div>
                             </div>
                         </div>

@@ -32,10 +32,10 @@ return [
     ],
 
     'azure' => [    
-        'client_id' => env('AZURE_CLIENT_ID','2e646319-353a-419e-b3d4-4028959479b4'),
-        'client_secret' => env('AZURE_CLIENT_SECRET','V3y8Q~4x91s2EkhG2WveNjN~.0W3CXFtiKCIPceg'),
-        'redirect' => env('AZURE_REDIRECT_URI','http://localhost:8000/auth/azure/callback'),
-        'tenant' => env('AZURE_TENANT_ID','7b892841-07db-4bfa-85e2-217e5585715d'),
+        'client_id' => env('AZURE_CLIENT_ID'),
+        'client_secret' => env('AZURE_CLIENT_SECRET'),
+        'redirect' => env('AZURE_REDIRECT_URI'),
+        'tenant' => env('AZURE_TENANT_ID'),
         'proxy' => env('PROXY')  // optionally
       ],
 
