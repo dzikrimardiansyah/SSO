@@ -38,5 +38,4 @@ return [
         'tenant' => env('AZURE_TENANT_ID'),
         'proxy' => env('PROXY')  // optionally
       ],
-
 ];
