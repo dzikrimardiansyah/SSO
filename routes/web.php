@@ -20,7 +20,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('sign-in-azure',[SocialiteController::class,'azure'])->name('user.login.azure');
 Route::get('/auth/azure/callback',[SocialiteController::class,'handleProvideCallback'])->name('user.azure.callback');
 
-Route::get('/dashboard',[PagesController::class,'index'])->middleware('auth')->name('index');
+Route::get('/dashboard',[PagesController::class,'index'])->middleware('auth','verified')->name('index');
 
 // Route::get('/dashboard', function () {
 //     return view('dashboard');

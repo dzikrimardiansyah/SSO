@@ -12,6 +12,7 @@ use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Mail;
 use Laravel\Socialite\Facades\Socialite;
 use Illuminate\Support\Str;
+use App\Providers\RouteServiceProvider;
 
 class SocialiteController extends Controller
 {
@@ -48,7 +49,7 @@ class SocialiteController extends Controller
              Mail::to($user->email)->send(new AfterRegister($user));
          }
          Auth::login($user, true);
-         return redirect (route('login.user'));
+         return redirect (route('index'));
     }
 
     // public function logout(Request $request) 

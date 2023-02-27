@@ -10,7 +10,7 @@ class SocialAccount extends Model
     use HasFactory;
 
     protected $guarded = [];
-
+ko
     /**
      * @return \Illuminate\Database\Eloquent\Relations\BelongsTo
      */
